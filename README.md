@@ -119,7 +119,9 @@ Moderator posts were dropped as the analysis focused mainly on the regular users
 ### Clean and Lemmatize
 Two functions were created to perform the cleaning and lemmatizing work.
 
-The clean function removed underscores, numbers, apostrophes, punctuations, links, whitespaces and lowercased texts.
+The clean function removed underscores, numbers, apostrophes, punctuations, links, whitespaces and emojis.
+
+It also lower-cased all the alphabets.
 
 The lemmatize function considers the context of the text and converts the words to its meaningful base form, known as the Lemma.
 
@@ -331,6 +333,28 @@ In the context of mental health classification between r/depression and r/anxiet
 - The Naive Bayes classifier has a lower precision score (0.814) compared to the logistic regression classifier (0.896), indicating that it may have more false positives, where a post is classified as being about depression (r/depression) but is actually about anxiety (r/anxiety). This could potentially direct individuals to the wrong community for help and support, which could be harmful.
 
 - While the Naive Bayes classifier may have a higher recall score, the logistic regression classifier's balanced performance across all metrics, and specifically its equal precision and recall score, makes it a better choice for this specific problem and context of classifying posts between r/depression and r/anxiety and directing individuals to the appropriate community for help and support.
+
+#### Top 10 Feature Importance
+The following top 10 features were identified:
+
+|Feature|Importance|
+|---|---|
+|anxiety|-10.3153|
+|depression|6.4011|
+|removed|4.8266|
+|anxious|-4.8059|
+|depressed|4.1177|
+|life|3.6434|
+|panic|-2.7800|
+|attack|-2.7032|
+|kill|2.4847|
+|tired|2.2118|
+
+- The results suggest that the presence of the word "anxiety" has the strongest negative impact on the prediction of depression (i.e., it is associated with the prediction of anxiety).
+
+- Conversely, the presence of the word "depression" has a strong positive impact on the prediction of depression.
+
+- Additionally, the words "removed", "anxious", "depressed", "life", "panic", "attack", "kill", and "tired" also have significant impact on the prediction.
 
 #### ROC Curve
 - The ROC curve is a plot of the true positive rate (sensitivity) against the false positive rate (1-specificity) for different threshold values.
