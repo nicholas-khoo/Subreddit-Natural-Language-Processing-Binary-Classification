@@ -72,7 +72,7 @@ A total of 4 .csv files were exported, 1 each for each extraction method on each
 Both `depression_praw.csv` and `anxiety_praw.csv` were initially imported for data cleaning and for exploratory data analysis.
 
 
-### Preliminary Analysis using PRAW scraoed data
+### Preliminary Analysis using PRAW scraped data
 As a recap, these two datasets were extracted using `PRAW` for the top 1000 posts in each subreddit.
 
 Based from the two subreddits, `r/depression` has approximately 942k members while `r/anxiety` has approximately 597k members. </br> </br>From the scrapped data and high level statistics, the engagement and activity level of members were uncovered: </br>
@@ -133,11 +133,11 @@ After cleaning and lemmatizing, the following is the updated data dictionary:
 
 |Feature|Type|Dataset|Description|
 |---|---|---|---|
-|id|string|anxiety_praw.csv & depression_praw.csv|Unique identifier of a particular post or comment within a subreddit|
-|created_utc|datetime64[ns]|anxiety_praw.csv & depression_praw.csv|The time the post or comment was created|
+|id|string|anxiety_praw.csv & depression_praw.csv|Unique identifier of a particular post or comment within a subreddit.|
+|created_utc|datetime64[ns]|anxiety_praw.csv & depression_praw.csv|The time the post or comment was created.|
 |title|String|anxiety_praw.csv & depression_praw.csv|The title of the post.|
 |is_self|Boolean|anxiety_praw.csv & depression_praw.csv|Indicates whether the post is a self-post or not.|
-|self_text|String|anxiety_praw.csv & depression_praw.csv|The actual text content of a self-post.n|
+|self_text|String|anxiety_praw.csv & depression_praw.csv|The actual text content of a self-post.|
 |score|Integer|anxiety_praw.csv & depression_praw.csv|The upvotes minus the downvotes of the post.|
 |upvote_ratio|Float|anxiety_praw.csv & depression_praw.csv|The ratio of upvotes to total votes.|
 |num_comments|Integer|anxiety_praw.csv & depression_praw.csv|The total number of comments on the post.|
