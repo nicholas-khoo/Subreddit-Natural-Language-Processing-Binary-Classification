@@ -33,4 +33,10 @@ It was interesting to observe the most frequent words within each subreddit, thu
 <p align="center">
 N-gram comparison for `r/depression` and `r/anxiety`
 </p>
-![]()
+It was observed that both subreddits used common words like "like", "im", "feel", "dont", "get", "people", and "time", but also have some distinct words that appear more frequently in one subreddit than the other, such as "life" and "want" for r/depression, and "anxiety" and "day" for r/anxiety. This highlightes the differences on the specific concerns that users are dealing with. `r/depression` focuses on issues related to finding the meaning and purpose in life while `r/anxiety` focuses on the experience of anxiety and how to manage it on a daily basis. This further emphasises the need to address the problem statement of misclassification.
+
+I was keen to understand how users really felt in each subreddit and performed sentiment analysis on texts within both subreddits.
+![](https://github.com/nicholas-khoo/Subreddit-Natural-Language-Processing-Binary-Classification/blob/main/images/sentiment_analysis.png)
+<p align="center">
+Sentiment Analysis for `r/depression` and `r/anxiety`
+</p>
