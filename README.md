@@ -27,16 +27,51 @@ Through exploratory data analysis, some of the priliminary observations include:
 - Posts on 'r/depression' also had higher scores and a higher average number of comments which supports the finding on high engagement and activity levels.
 - Both subreddits had a high upvote ratio which suggests that both were well-received by the community as majority of users were upvoting the posts.
 
-It was interesting to observe the most frequent words within each subreddit, thus the exploration of N-grams and Bi-grams: </br>
+It was interesting to observe the most frequent words within each subreddit, thus the exploration of N-gram: </br>
 ***N-gram Analysis***
 ![](https://github.com/nicholas-khoo/Subreddit-Natural-Language-Processing-Binary-Classification/blob/main/images/n-gram%20comparison.png)
 <p align="center">
 N-gram comparison for `r/depression` and `r/anxiety`
 </p>
-It was observed that both subreddits used common words like "like", "im", "feel", "dont", "get", "people", and "time", but also have some distinct words that appear more frequently in one subreddit than the other, such as "life" and "want" for r/depression, and "anxiety" and "day" for r/anxiety. This highlightes the differences on the specific concerns that users are dealing with. `r/depression` focuses on issues related to finding the meaning and purpose in life while `r/anxiety` focuses on the experience of anxiety and how to manage it on a daily basis. This further emphasises the need to address the problem statement of misclassification.
+It was observed that both subreddits used common words like "like", "im", "feel", "dont", "get", "people", and "time", but also have some distinct words that appear more frequently in one subreddit than the other, such as "life" and "want" for r/depression, and "anxiety" and "day" for r/anxiety.
 
+This highlightes the differences on the specific concerns that users are dealing with. `r/depression` focuses on issues related to finding the meaning and purpose in life while `r/anxiety` focuses on the experience of anxiety and how to manage it on a daily basis.
+
+This further emphasises the need to address the problem statement of misclassification.
+
+***Sentiment Analysis***
 I was keen to understand how users really felt in each subreddit and performed sentiment analysis on texts within both subreddits.
 ![](https://github.com/nicholas-khoo/Subreddit-Natural-Language-Processing-Binary-Classification/blob/main/images/sentiment_analysis.png)
 <p align="center">
 Sentiment Analysis for `r/depression` and `r/anxiety`
 </p>
+The mean sentiment score informed that the majority of top posts on `r/depression` have a negative sentiment. This suggests that the posts on this subreddit tends to be more negative in tone, which is expected given the nature of the subreddit.
+
+Interestingly, sentiment scores for r/anxiety are more evenly distributed around 0. THis suggests that the posts on this subreddit have a more neutral sentiment overall - both postive and negative equally represented.
+
+Users who visit `r/depression` regularly and post their thoughts requires a more supportive community. It was observed that the moderators do regular check-in posts to encourage users to share their feelings and obtain support from the wider community.
+
+***Machine Learning***
+The cleaned data was combined and exported to perform preprocessing and machine learning.
+
+Two models were evaluated at this stage - `Naive Bayes` and `Logistic Regression`.
+
+The goal is to classify posts between r/depression and r/anxiety and direct individuals to the appropriate community for help and support, both `recall (sensitivity)` and `precision` metrics are important.
+
+The logistic regression classifier has an equal precision and recall score, which means it is equally good at identifying both positive (r/depression) and negative (r/anxiety) instances. Therefore, it is likely to perform better than the Naive Bayes classifier, which has a lower precision score and a higher recall score.
+
+This means that the Naive Bayes classifier may identify more posts as positive (r/depression) than the logistic regression classifier, but at the cost of misclassifying some negative (r/anxiety) instances.
+
+As such, it was concluded the logistic regression classifier is likely to be a better choice for this specific problem and context as it is more balanced in identifying both `r/depression` and `r/anxiety posts`, while still maintaining high accuracy and a good balance between precision and recall.
+
+![](https://github.com/nicholas-khoo/Subreddit-Natural-Language-Processing-Binary-Classification/blob/main/images/roc.png)
+<p align="center">
+ROC Curve
+</p>
+
+Logistic regression performed better than Naive Bayes and produced an accuracy score of 89.26%!
+
+# Conclusion and Recommendation
+`r/depression` has a more negative sentiments as compared to `r/anxiety` which highlights the need for proper classification of posts such that users' posts will be categorised to the appropriate subreddit to receive the support they require.
+
+Moderators of both subreddits can utilise the trained model to have a preliminary classification of users' posts. However, as both anxiety and depression are serious mental health issues that require close attention to, there is a need to scrutinise the content to have a second evaluation.
