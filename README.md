@@ -30,8 +30,9 @@ Through exploratory data analysis, some of the priliminary observations include:
 It was interesting to observe the most frequent words within each subreddit, thus the exploration of N-gram: </br>
 ***N-gram Analysis***
 ![](https://github.com/nicholas-khoo/Subreddit-Natural-Language-Processing-Binary-Classification/blob/main/images/uni_gram_comparison.png)
+
 <p align="center">
-N-gram comparison for `r/depression` and `r/anxiety`
+Uni-gram comparison for `r/depression` and `r/anxiety`
 </p>
 It was observed that both subreddits used common words like "like", "im", "feel", "dont", "get", "people", and "time", but also have some distinct words that appear more frequently in one subreddit than the other, such as "life" and "want" for r/depression, and "anxiety" and "day" for r/anxiety.
 
