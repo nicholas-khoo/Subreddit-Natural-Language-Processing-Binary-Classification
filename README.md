@@ -29,7 +29,7 @@ Through exploratory data analysis, some of the priliminary observations include:
 
 It was interesting to observe the most frequent words within each subreddit, thus the exploration of N-gram: </br>
 ***N-gram Analysis***
-![](https://github.com/nicholas-khoo/Subreddit-Natural-Language-Processing-Binary-Classification/blob/main/images/n-gram%20comparison.png)
+![](https://github.com/nicholas-khoo/Subreddit-Natural-Language-Processing-Binary-Classification/blob/main/images/uni_gram_comparison.png)
 <p align="center">
 N-gram comparison for `r/depression` and `r/anxiety`
 </p>
