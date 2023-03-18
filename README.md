@@ -27,8 +27,9 @@ Through exploratory data analysis, some of the priliminary observations include:
 - Posts on 'r/depression' also had higher scores and a higher average number of comments which supports the finding on high engagement and activity levels.
 - Both subreddits had a high upvote ratio which suggests that both were well-received by the community as majority of users were upvoting the posts.
 
-It was interesting to observe the most frequent words within each subreddit, thus the exploration of N-gram: </br>
+It was interesting to observe the most frequent words within each subreddit, thus the exploration of Uni-grams: </br>
 ***N-gram Analysis***
+
 ![](https://github.com/nicholas-khoo/Subreddit-Natural-Language-Processing-Binary-Classification/blob/main/images/uni_gram_comparison.png)
 
 <p align="center">
