@@ -42,6 +42,7 @@ This highlightes the differences on the specific concerns that users are dealing
 This further emphasises the need to address the problem statement of misclassification.
 
 ***Sentiment Analysis***
+
 I was keen to understand how users really felt in each subreddit and performed sentiment analysis on texts within both subreddits.
 ![](https://github.com/nicholas-khoo/Subreddit-Natural-Language-Processing-Binary-Classification/blob/main/images/sentiment_analysis.png)
 <p align="center">
@@ -54,6 +55,7 @@ Interestingly, sentiment scores for r/anxiety are more evenly distributed around
 Users who visit `r/depression` regularly and post their thoughts requires a more supportive community. It was observed that the moderators do regular check-in posts to encourage users to share their feelings and obtain support from the wider community.
 
 ***Machine Learning***
+
 The cleaned data was combined and exported to perform preprocessing and machine learning.
 
 Two models were evaluated at this stage - `Naive Bayes` and `Logistic Regression`.
