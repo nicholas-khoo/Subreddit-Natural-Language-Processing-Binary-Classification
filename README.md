@@ -73,7 +73,7 @@ As such, it was concluded the logistic regression classifier is likely to be a b
 ROC Curve
 </p>
 
-Logistic regression performed better than Naive Bayes and produced an accuracy score of 89.26%!
+Logistic regression performed better than Naive Bayes and produced an accuracy score of 90.9%!
 
 # Conclusion and Recommendation
 `r/depression` has a more negative sentiments as compared to `r/anxiety` which highlights the need for proper classification of posts such that users' posts will be categorised to the appropriate subreddit to receive the support they require.
